@@ -1,6 +1,6 @@
 package status
 
-import "github.com/ldez/go-git-cmd-wrapper/v2/types"
+import "github.com/codysk/go-git-cmd-wrapper/v2/types"
 
 // PathSpec <pathspec>...
 // See the pathspec entry in gitglossary(7).

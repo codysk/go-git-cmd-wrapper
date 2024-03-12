@@ -3,7 +3,7 @@ package remote
 import (
 	"fmt"
 
-	"github.com/ldez/go-git-cmd-wrapper/v2/types"
+	"github.com/codysk/go-git-cmd-wrapper/v2/types"
 )
 
 // Add git remote add [-t <branch>] [-m <master>] [-f] [--[no-]tags] [--mirror=<fetch|push>] <name> <url>

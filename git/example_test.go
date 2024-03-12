@@ -5,28 +5,28 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/ldez/go-git-cmd-wrapper/v2/add"
-	"github.com/ldez/go-git-cmd-wrapper/v2/branch"
-	"github.com/ldez/go-git-cmd-wrapper/v2/checkout"
-	"github.com/ldez/go-git-cmd-wrapper/v2/clone"
-	"github.com/ldez/go-git-cmd-wrapper/v2/commit"
-	"github.com/ldez/go-git-cmd-wrapper/v2/config"
-	"github.com/ldez/go-git-cmd-wrapper/v2/fetch"
-	"github.com/ldez/go-git-cmd-wrapper/v2/git"
-	ginit "github.com/ldez/go-git-cmd-wrapper/v2/init"
-	"github.com/ldez/go-git-cmd-wrapper/v2/lsfiles"
-	"github.com/ldez/go-git-cmd-wrapper/v2/merge"
-	"github.com/ldez/go-git-cmd-wrapper/v2/notes"
-	"github.com/ldez/go-git-cmd-wrapper/v2/pull"
-	"github.com/ldez/go-git-cmd-wrapper/v2/push"
-	"github.com/ldez/go-git-cmd-wrapper/v2/rebase"
-	"github.com/ldez/go-git-cmd-wrapper/v2/remote"
-	"github.com/ldez/go-git-cmd-wrapper/v2/reset"
-	"github.com/ldez/go-git-cmd-wrapper/v2/revparse"
-	"github.com/ldez/go-git-cmd-wrapper/v2/status"
-	"github.com/ldez/go-git-cmd-wrapper/v2/tag"
-	"github.com/ldez/go-git-cmd-wrapper/v2/types"
-	"github.com/ldez/go-git-cmd-wrapper/v2/worktree"
+	"github.com/codysk/go-git-cmd-wrapper/v2/add"
+	"github.com/codysk/go-git-cmd-wrapper/v2/branch"
+	"github.com/codysk/go-git-cmd-wrapper/v2/checkout"
+	"github.com/codysk/go-git-cmd-wrapper/v2/clone"
+	"github.com/codysk/go-git-cmd-wrapper/v2/commit"
+	"github.com/codysk/go-git-cmd-wrapper/v2/config"
+	"github.com/codysk/go-git-cmd-wrapper/v2/fetch"
+	"github.com/codysk/go-git-cmd-wrapper/v2/git"
+	ginit "github.com/codysk/go-git-cmd-wrapper/v2/init"
+	"github.com/codysk/go-git-cmd-wrapper/v2/lsfiles"
+	"github.com/codysk/go-git-cmd-wrapper/v2/merge"
+	"github.com/codysk/go-git-cmd-wrapper/v2/notes"
+	"github.com/codysk/go-git-cmd-wrapper/v2/pull"
+	"github.com/codysk/go-git-cmd-wrapper/v2/push"
+	"github.com/codysk/go-git-cmd-wrapper/v2/rebase"
+	"github.com/codysk/go-git-cmd-wrapper/v2/remote"
+	"github.com/codysk/go-git-cmd-wrapper/v2/reset"
+	"github.com/codysk/go-git-cmd-wrapper/v2/revparse"
+	"github.com/codysk/go-git-cmd-wrapper/v2/status"
+	"github.com/codysk/go-git-cmd-wrapper/v2/tag"
+	"github.com/codysk/go-git-cmd-wrapper/v2/types"
+	"github.com/codysk/go-git-cmd-wrapper/v2/worktree"
 )
 
 func ExampleInit() {
@@ -72,17 +72,17 @@ func ExamplePullWithContext() {
 }
 
 func ExampleClone() {
-	out, _ := git.Clone(clone.Repository("git@github.com:ldez/go-git-cmd-wrapper.git"), git.CmdExecutor(cmdExecutorMock))
+	out, _ := git.Clone(clone.Repository("git@github.com:codysk/go-git-cmd-wrapper.git"), git.CmdExecutor(cmdExecutorMock))
 
 	fmt.Println(out)
-	// Output: git clone git@github.com:ldez/go-git-cmd-wrapper.git
+	// Output: git clone git@github.com:codysk/go-git-cmd-wrapper.git
 }
 
 func ExampleCloneWithContext() {
-	out, _ := git.CloneWithContext(context.Background(), clone.Repository("git@github.com:ldez/go-git-cmd-wrapper.git"), git.CmdExecutor(cmdExecutorMock))
+	out, _ := git.CloneWithContext(context.Background(), clone.Repository("git@github.com:codysk/go-git-cmd-wrapper.git"), git.CmdExecutor(cmdExecutorMock))
 
 	fmt.Println(out)
-	// Output: git clone git@github.com:ldez/go-git-cmd-wrapper.git
+	// Output: git clone git@github.com:codysk/go-git-cmd-wrapper.git
 }
 
 func ExampleRemote() {

@@ -6,7 +6,7 @@ package lsfiles
 import (
 	"fmt"
 
-	"github.com/ldez/go-git-cmd-wrapper/v2/types"
+	"github.com/codysk/go-git-cmd-wrapper/v2/types"
 )
 
 // Abbrev Instead of showing the full 40-byte hexadecimal object lines, show the shortest prefix that is at least <n> hexdigits long that uniquely refers the object. Non default number of digits can be specified with --abbrev=<n>.

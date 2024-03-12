@@ -5,7 +5,7 @@ import (
 	"io"
 	"log"
 
-	"github.com/ldez/go-git-cmd-wrapper/v2/types"
+	"github.com/codysk/go-git-cmd-wrapper/v2/types"
 )
 
 // Init https://git-scm.com/docs/git-init
@@ -206,6 +206,16 @@ func LsFiles(subCommand ...types.Option) (string, error) {
 // LsFilesWithContext https://git-scm.com/docs/git-ls-files
 func LsFilesWithContext(ctx context.Context, subCommand ...types.Option) (string, error) {
 	return command(ctx, "ls-files", subCommand...)
+}
+
+// LsRemote https://git-scm.com/docs/git-ls-remote
+func LsRemote(subCommand ...types.Option) (string, error) {
+	return command(context.Background(), "ls-remote", subCommand...)
+}
+
+// LsRemoteWithContext https://git-scm.com/docs/git-ls-remote
+func LsRemoteWithContext(ctx context.Context, subCommand ...types.Option) (string, error) {
+	return command(ctx, "ls-remote", subCommand...)
 }
 
 // Raw use to execute arbitrary git commands.

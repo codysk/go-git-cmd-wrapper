@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/ldez/go-git-cmd-wrapper/v2/git"
+	"github.com/codysk/go-git-cmd-wrapper/v2/git"
 )
 
 func TestInit(t *testing.T) {

@@ -1,6 +1,6 @@
 package notes
 
-import "github.com/ldez/go-git-cmd-wrapper/v2/types"
+import "github.com/codysk/go-git-cmd-wrapper/v2/types"
 
 // Object related to `copy` sub-command (`<from-object> <to-object>`).
 func Object(from, to string) func(*types.Cmd) {

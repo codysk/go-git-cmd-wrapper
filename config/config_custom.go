@@ -3,7 +3,7 @@ package config
 import (
 	"strconv"
 
-	"github.com/ldez/go-git-cmd-wrapper/v2/types"
+	"github.com/codysk/go-git-cmd-wrapper/v2/types"
 )
 
 // Entry Adds a configuration entry.

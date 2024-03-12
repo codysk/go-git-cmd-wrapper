@@ -1,6 +1,6 @@
 package lsfiles
 
-import "github.com/ldez/go-git-cmd-wrapper/v2/types"
+import "github.com/codysk/go-git-cmd-wrapper/v2/types"
 
 // HyphenHyphen add `--`.
 // Do not interpret any more arguments as options.

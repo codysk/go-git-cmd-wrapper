@@ -3,7 +3,7 @@ package branch
 import (
 	"fmt"
 
-	"github.com/ldez/go-git-cmd-wrapper/v2/types"
+	"github.com/codysk/go-git-cmd-wrapper/v2/types"
 )
 
 // Abbrev use <n> digits to display SHA-1s

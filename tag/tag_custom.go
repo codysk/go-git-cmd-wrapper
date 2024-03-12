@@ -1,6 +1,6 @@
 package tag
 
-import "github.com/ldez/go-git-cmd-wrapper/v2/types"
+import "github.com/codysk/go-git-cmd-wrapper/v2/types"
 
 // Name [<tagname>]
 // The name of the tag to create, delete, or describe.

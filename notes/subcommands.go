@@ -1,6 +1,6 @@
 package notes
 
-import "github.com/ldez/go-git-cmd-wrapper/v2/types"
+import "github.com/codysk/go-git-cmd-wrapper/v2/types"
 
 // List the notes object for a given object.
 // usage: git notes [list [<object>]]

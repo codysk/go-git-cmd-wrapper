@@ -6,7 +6,7 @@ package notes
 import (
 	"fmt"
 
-	"github.com/ldez/go-git-cmd-wrapper/v2/types"
+	"github.com/codysk/go-git-cmd-wrapper/v2/types"
 )
 
 // Abort Abort/reset an in-progress git notes merge, i.e. a notes merge with conflicts.
