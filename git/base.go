@@ -250,6 +250,13 @@ func Cond(apply bool, options ...types.Option) types.Option {
 	return NoOp
 }
 
+// Path option set to run as if git was started in <path> instead of the current working directory.
+func Path(path string) types.Option {
+	return func(g *types.Cmd) {
+		g.Options = append([]string{"-C", path}, g.Options...)
+	}
+}
+
 // NoOp do nothing.
 func NoOp(_ *types.Cmd) {}
 

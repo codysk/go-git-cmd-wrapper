@@ -489,6 +489,13 @@ func ExampleCond() {
 	// git push --all --dry-run --follow-tags --receive-pack=aaa
 }
 
+func ExamplePath() {
+	out, _ := git.Push(push.All, push.FollowTags, push.ReceivePack("aaa"), git.Path("/path/to/repo"), git.CmdExecutor(cmdExecutorMock))
+
+	fmt.Print(out)
+	// Output: git -C /path/to/repo push --all --follow-tags --receive-pack=aaa
+}
+
 func cmdExecutorMock(_ context.Context, name string, _ bool, args ...string) (string, error) {
 	return fmt.Sprintln(name, strings.Join(args, " ")), nil
 }
