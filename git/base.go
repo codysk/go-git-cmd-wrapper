@@ -274,9 +274,16 @@ func CmdExecutor(executor types.Executor) types.Option {
 	}
 }
 
+// StreamHandler allows to handle the command streams real time.
+func StreamHandler(handler types.StreamHandler) types.Option {
+	return func(g *types.Cmd) {
+		g.StreamHandler = handler
+	}
+}
+
 func command(ctx context.Context, name string, options ...types.Option) (string, error) {
 	g := types.NewCmd(name)
 	g.ApplyOptions(options...)
 
-	return g.Exec(ctx, g.Base, g.Debug, g.Options...)
+	return g.Exec(ctx, g.Base, g.Debug, g.StreamHandler, g.Options...)
 }
