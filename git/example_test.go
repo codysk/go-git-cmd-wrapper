@@ -496,6 +496,6 @@ func ExamplePath() {
 	// Output: git -C /path/to/repo push --all --follow-tags --receive-pack=aaa
 }
 
-func cmdExecutorMock(_ context.Context, name string, _ bool, args ...string) (string, error) {
+func cmdExecutorMock(_ context.Context, name string, _ bool, _ types.StreamHandler, args ...string) (string, error) {
 	return fmt.Sprintln(name, strings.Join(args, " ")), nil
 }
